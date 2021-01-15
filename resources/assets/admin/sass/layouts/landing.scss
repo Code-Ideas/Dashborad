@@ -1,0 +1,11 @@
+/*=============Hero==============*/
+
+.hero {
+    background-image: url(/admin/img/bg/hero.svg);
+    background-size: cover;
+    background-position: bottom center;
+    .your-text {
+        height: 3.5rem;
+        vertical-align: bottom;
+    }
+}

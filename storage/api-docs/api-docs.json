@@ -1,0 +1,89 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Code Ideas Dashboard",
+        "description": "Project Api Documentation",
+        "contact": {
+            "email": "ahmed.ali-gad@outlook.com"
+        },
+        "version": "1.0.0"
+    },
+    "servers": [
+        {
+            "url": "http://localhost:8000/api/",
+            "description": "API Server"
+        }
+    ],
+    "paths": {
+        "/sections": {
+            "get": {
+                "tags": [
+                    "Sections"
+                ],
+                "summary": "Get list of sections",
+                "description": "Returns list of sections",
+                "operationId": "getSectionsList",
+                "responses": {
+                    "200": {
+                        "description": "Successful operation",
+                        "content": {
+                            "application/json": {}
+                        }
+                    },
+                    "401": {
+                        "description": "Unauthenticated"
+                    },
+                    "403": {
+                        "description": "Forbidden"
+                    },
+                    "400": {
+                        "description": "Bad Request"
+                    },
+                    "404": {
+                        "description": "not found"
+                    }
+                }
+            }
+        },
+        "/sliders": {
+            "get": {
+                "tags": [
+                    "Sliders"
+                ],
+                "summary": "Get list of sliders",
+                "description": "Returns list of sliders",
+                "operationId": "getSlidersList",
+                "responses": {
+                    "200": {
+                        "description": "Successful operation",
+                        "content": {
+                            "application/json": {}
+                        }
+                    },
+                    "401": {
+                        "description": "Unauthenticated"
+                    },
+                    "403": {
+                        "description": "Forbidden"
+                    },
+                    "400": {
+                        "description": "Bad Request"
+                    },
+                    "404": {
+                        "description": "not found"
+                    }
+                }
+            }
+        }
+    },
+    "components": {
+        "securitySchemes": {
+            "Bearer": {
+                "type": "apiKey",
+                "description": "Pass Bearer Token",
+                "name": "Authorization",
+                "in": "header"
+            }
+        }
+    }
+}

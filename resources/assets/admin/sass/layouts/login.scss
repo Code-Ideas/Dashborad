@@ -1,0 +1,81 @@
+/*================= Login page ==================*/
+
+.login-page {
+    display: table;
+    background-color: $white;
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    .login-page-child {
+        display: table-cell;
+        vertical-align: middle;
+    }
+    .wave {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        height: 100%;
+        z-index: 0;
+    }
+    .columns-container {
+        padding: 7rem 0;
+    }
+    .avatar {
+        margin-right: auto;
+        margin-left: auto;
+        margin-bottom: 2rem;
+    }
+    .side-vector {
+        max-width: 500px;
+    }
+    form {
+        margin-top: 2.5rem;
+        max-width: 360px;
+        margin-right: auto;
+        margin-left: auto;
+        .control {
+            position: relative;
+            display: flex;
+            align-items: center;
+            margin: 25px 0;
+            padding: 5px 0;
+            border-bottom: 2px solid #d9d9d9;
+            &:after,
+            &:before {
+                content: '';
+                position: absolute;
+                bottom: -2px;
+                width: 0%;
+                height: 2px;
+                background-color: $primary;
+                transition: .4s;
+            }
+            &:before {
+                right: 50%;
+            }
+            &:after {
+                left: 50%;
+            }
+            input {
+                border: 0;
+                box-shadow: none;
+            }
+            i {
+                transition: .4s;
+                color: #d9d9d9;
+                font-size: 1.3rem;
+            }
+        }
+        .focus {
+            .control {
+                &:after,
+                &:before {
+                    width: 50%;
+                }
+                i {
+                    color: $primary
+                }
+            }
+        }
+    }
+}

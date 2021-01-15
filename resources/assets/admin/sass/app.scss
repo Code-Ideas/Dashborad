@@ -1,0 +1,37 @@
+/*-----------Variables-----------*/
+@import "variables";
+
+/*-----------Bulma-----------*/
+@import '~bulma';
+
+/*-----------Font Awesome-----------*/
+$fa-font-path:        "/fonts/webfonts";
+@import '~@fortawesome/fontawesome-free/scss/fontawesome';
+@import '~@fortawesome/fontawesome-free/scss/brands';
+@import '~@fortawesome/fontawesome-free/scss/solid';
+@import '~@fortawesome/fontawesome-free/scss/regular';
+
+/*-----------plugins---------------*/
+@import "~bulma-extensions/bulma-pageloader/dist/css/bulma-pageloader.min.css";
+@import '~vue-ctk-date-time-picker/dist/vue-ctk-date-time-picker.css';
+@import '~datatables-bulma/css/dataTables.bulma.min.css';
+@import '~sweetalert2/dist/sweetalert2.min.css';
+@import '~dropzone/dist/min/basic.min.css';
+@import '~dropzone/dist/min/dropzone.min.css';
+
+/*----------- UI--------------*/
+@import '~bulma-extensions/bulma-pricingtable/dist/css/bulma-pricingtable.min.css';
+@import '~bulma-extensions/bulma-tooltip/dist/css/bulma-tooltip.min.css';
+@import '~bulma-extensions/bulma-checkradio/dist/css/bulma-checkradio.min.css';
+
+
+/*-----------components--------------*/
+@import './components/modal.min.css';
+@import './components/datatable/datatables_checkboxes.min.css';
+@import './components/bulma-iconpicker/bulma-iconpicker.css';
+@import './components/bulma-megamenu/bulma-megamenu.scss';
+
+/*-----------layouts-------------*/
+@import './layouts/landing';
+@import './layouts/login';
+@import './layouts/home';

@@ -1,0 +1,67 @@
+@font-face {
+    font-family: "Droid Arabic Kufi";
+    src: url('/fonts/web-font/DroidArabicKufi.eot');
+    src: url('/fonts/web-font/DroidArabicKufi.eot?#iefix') format('embedded-opentype'), url('/fonts/web-font/DroidArabicKufi.svg#DroidArabicKufi') format('svg'), url('/fonts/web-font/DroidArabicKufi.woff') format('woff'), url('/fonts/web-font/DroidArabicKufi.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+// Body
+$body-bg: #f2f5f7;
+
+/*==============Typography==============*/
+
+$font-family-sans-serif: "Droid Arabic Kufi",sans-serif;
+$family-sans-serif : "Droid Arabic Kufi" ,sans-serif;
+$font-size-base: 0.9rem;
+$line-height-base: 1.6;
+$body-size:14px;
+
+/*==============Colors==============*/
+
+$primary:#54cc96;
+$primary-dark:#47b383;
+$primary-light:#60d09d;
+$grey-light:#f2f5f7;
+$warning: #ffbe4e;
+$danger: #ff5560;
+$info:#508aeb;
+$secondary:#6c757d;
+$accent:#508aeb;
+$link:#6868fa;
+$grey-dark: #707070;
+
+/*==============boxShadow==============*/
+
+$box-shadow-primary :0 14px 26px -12px #6e9a7d,
+0 4px 23px 0px rgba(0,
+0,
+0,
+0.12),
+0 8px 10px -5px #5e866f !important;
+$box-shadow-warning :0 14px 26px -12px #9a906e,
+0 4px 23px 0px rgba(0,
+0,
+0,
+0.12),
+0 8px 10px -5px #867f5e !important;
+$box-shadow-danger :0 14px 26px -12px #9a6e70,
+0 4px 23px 0px rgba(0,
+0,
+0,
+0.12),
+0 8px 10px -5px #865e60 !important;
+$box-shadow-secondary :0 14px 26px -12px #665f5f,
+0 4px 23px 0px rgba(0,
+0,
+0,
+0.12),
+0 8px 10px -5px #7c7a7b !important;
+$box-shadow-accent :0 14px 26px -12px #536e86,
+0 4px 23px 0px rgba(0,
+0,
+0,
+0.12),
+0 8px 10px -5px #5a678d !important;
+$rtl:true;

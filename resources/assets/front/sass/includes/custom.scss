@@ -1,0 +1,18 @@
+/*============= 1-Fonts==================*/
+@font-face {
+    font-family: "Droid Arabic Kufi";
+    src: url('/fonts/web-font/DroidArabicKufi.eot');
+    src: url('/fonts/web-font/DroidArabicKufi.eot?#iefix') format('embedded-opentype'), url('/fonts/web-font/DroidArabicKufi.svg#DroidArabicKufi') format('svg'), url('/fonts/web-font/DroidArabicKufi.woff') format('woff'), url('/fonts/web-font/DroidArabicKufi.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+/*============= 1-Inputs==================*/
+.form-input{
+    @apply px-3 py-3 placeholder-gray-400 text-gray-700 relative bg-white bg-white rounded text-sm shadow outline-none w-full;
+    &:focus{
+        @apply outline-none ring border-green-300;
+    }
+    
+}
