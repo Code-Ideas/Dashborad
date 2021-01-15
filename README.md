@@ -23,7 +23,7 @@ Clone the repo and follow below steps.
 5. Run `php artisan migrate --seed` to seed your database
 
 Thats it... Run the command `php artisan serve`, you are good to go with your **Dashboard** application.\
-Open `/api/v1` For Api Documentation
+Open your server `/api/v1` For Api Documentation
 
 ### Demo Credentials
 ---
