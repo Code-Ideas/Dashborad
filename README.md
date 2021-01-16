@@ -1,4 +1,4 @@
-<p align="center"><a href="https://dashboard.codeideas.dev" target="_blank">Dashboard</a></p>
+<p align="center"><a href="https://dashboard.codeideas.dev" target="_blank">Dashboard Demo</a></p>
 
 
 ## Features
