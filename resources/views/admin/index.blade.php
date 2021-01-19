@@ -77,14 +77,14 @@
                             <i class="fa fa-envelope"></i>
                         </span>
                     </div>
-                    <span class="has-text-white has-text-weight-bold">رسائل </span>
+                    <span class="has-text-white has-text-weight-bold">رسائل التواصل </span>
                 </div>
                 <div class="content">
                     <div class="card-title is-tile is-styled has-text-right">
-                        <div class="card-stat accent has-text-right is-size-4 has-text-weight-bold">{{ 0 }}</div>
+                        <div class="card-stat accent has-text-right is-size-4 has-text-weight-bold">{{ \App\Models\Contact::count() }}</div>
                     </div>
                     <div class="mt-2 more">
-                        <a class="accent" href="#">المزيد</a>
+                        <a class="accent" href="{{ route('admin.contacts.index') }}">المزيد</a>
                     </div>
                 </div>
             </div>

@@ -21,6 +21,10 @@
                                 <span class="value">{{ $contact->name }}</span>
                             </div>
                             <div class="info">
+                                <label class="label">رقم الهاتف </label>
+                                <span class="value"><a href="tel:{{ $contact->phone }}">{{ $contact->phone }}</a></span>
+                            </div>
+                            <div class="info">
                                 <label class="label">البريد الإلكتروني </label>
                                 <span class="value"><a href="mailto:{{ $contact->email }}">{{ $contact->email }}</a></span>
                             </div>

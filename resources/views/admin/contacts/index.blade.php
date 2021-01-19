@@ -19,6 +19,7 @@
                     <thead>
                     <tr>
                         <th>اسم المرسل</th>
+                        <th>الهاتف</th>
                         <th> البريد الإلكتروني</th>
                         <th>الاجراءات</th>
                     </tr>
@@ -27,6 +28,7 @@
                     @foreach($contacts as $contact)
                         <tr>
                             <td>{{ $contact->name }}</td>
+                            <td><a href="tel:{{ $contact->phone }}">{{ $contact->phone }}</a></td>
                             <td><a href="mailto:{{ $contact->email }}">{{ $contact->email }}</a></td>
                             <td>
                                 <div class="buttons has-addons">
