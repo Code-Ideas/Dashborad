@@ -12,8 +12,8 @@
         <a class="link-item" href="{{ route('admin.datepicker_component') }}">Date Picker</a>
         <a class="link-item" href="{{ route('admin.maps_component') }}">Google Maps</a>
         <a class="link-item" href="{{ route('admin.tags_component') }}">Tags</a>
-        
-        
+
+
     </collapse-item>
     <collapse-item title="اقسام الموقع" icon="fa fa-sitemap">
         <a class="link-item" href="{{ route('admin.sections.create') }}">اضافة قسم</a>
@@ -27,6 +27,7 @@
         <a class="link-item" href="{{ route('admin.sliders.create') }}">اضافة صورة</a>
         <a class="link-item" href="{{ route('admin.sliders.index') }}">قائمة الصور</a>
     </collapse-item>
+    <a href="{{ route('admin.contacts.index') }}" class="card link-item-no-collapse"><i class="fa fa-envelope"></i><span>رسائل التواصل</span></a>
     <a href="{{ route('admin_logout') }}" onclick="event.preventDefault();
   document.getElementById('logout-form').submit();" class="card link-item-no-collapse"><i
             class="fas fa-sign-out-alt"></i><span>تسجيل الخروج</span></a>
