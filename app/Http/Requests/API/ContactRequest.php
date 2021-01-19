@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Http\Requests\Front;
+namespace App\Http\Requests\API;
 
-use Illuminate\Foundation\Http\FormRequest;
+use App\Http\Requests\API\FormRequest;
 
 class ContactRequest extends FormRequest
 {
@@ -24,21 +24,22 @@ class ContactRequest extends FormRequest
     public function rules()
     {
         return [
-            'name' => 'required|min:3',
-            'email' => 'required|email',
-            'message' => 'required|min:15'
+            'name' => 'required|string|min:3',
+            'email' => 'required|string|email',
+            'phone' => 'required|digits:11',
+            'message' => 'required|string|min:10'
         ];
     }
-
     /**
      * @return array
      */
     public function attributes()
     {
         return [
-            'full_name' => trans('main.form.full_name'),
-            'email' => trans('main.sign.email'),
-            'message' => trans('main.form.content')
+            'name' => 'الاسم',
+            'email' => 'البريد الالكتروني',
+            'phone' => 'رقم الهاتف',
+            'message' => 'محتوي الرسالة'
         ];
     }
 }
