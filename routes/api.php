@@ -18,6 +18,8 @@ use Illuminate\Support\Facades\Route;
 Route::get('sliders', 'SliderController');
 /*====== Sections =======*/
 Route::get('sections', 'SectionController')->name('sections.index');
+/* ====== Articles =======*/
+Route::apiResource('articles', 'ArticlesController', ['only' => ['index', 'show']]);
 /*====== Contact =======*/
 Route::post('contact', 'ContactController');
 
