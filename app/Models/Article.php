@@ -3,6 +3,7 @@
 namespace App\Models;
 
 use App\Traits\HasPhoto;
+use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Model;
 
 class Article extends Model
@@ -17,6 +18,14 @@ class Article extends Model
     public function section()
     {
         return $this->belongsTo(Section::class);
+    }
+
+    /**
+     * @param Builder $builder
+     */
+    public function scopeActive(Builder $builder)
+    {
+        $builder->where('active', true);
     }
 
     public function scopeSearch($query, $filter)
