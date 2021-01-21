@@ -655,6 +655,18 @@ a:hover {
             .card-footer {
                 padding: 10px 20px;
                 border: 0;
+               &.with-pagination{
+                padding-bottom: 2rem;
+                .pagination-link{
+                    &.is-current{
+                        background-color: $primary;
+                        border-color: $primary-light;
+                    }
+                    &:not(.is-current){
+                        color: $grey;
+                    }
+                }
+               }
             }
         }
     }
