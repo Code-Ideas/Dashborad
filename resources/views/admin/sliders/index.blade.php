@@ -50,7 +50,7 @@
     </div><!-- End Card Content -->
     <!-- Start Card Footer -->
     <div class="card-footer with-pagination">
-      {!! $sliders->render() !!}
+      {{  $sliders->links('vendor.pagination.bulma') }}
     </div><!-- End Card Footer -->
   </div><!-- End Card -->
   <!-- Include Modals -->

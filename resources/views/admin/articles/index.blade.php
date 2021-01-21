@@ -48,7 +48,7 @@
     
     <!-- Start Card Footer -->
     <div class="card-footer with-pagination">
-      {!! $articles->appends(['filter' => $filter])->render() !!}
+      {{ $articles->appends(['filter' => $filter])->links('vendor.pagination.bulma') }}
     </div><!-- End Card Content -->
   </div><!-- End Card -->
   
