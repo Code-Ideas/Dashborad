@@ -36,6 +36,7 @@
                 <td>
                   <div class="buttons has-addons">
                     <a class="button is-info" href="{{ route('admin.articles.edit', $article->id) }}"> تعديل </a>
+                      <a class="button is-warning" href="{{ route('admin.articles.show', $article->id) }}">معرض الصور</a>
                     <span class="modal-open button is-danger" status-name="تأكيد الحذف"  traget-modal=".delete-modal" data_id="{{ $article->id }}" data_name="{{ $article->title }}" data-url="{{ route('admin.articles.destroy', $article->id) }}">حذف</span>
                   </div>
                 </td>
@@ -45,13 +46,13 @@
         </table>
       </div>
     </div><!-- End Card Content -->
-    
+
     <!-- Start Card Footer -->
     <div class="card-footer with-pagination">
       {{ $articles->appends(['filter' => $filter])->links('vendor.pagination.bulma') }}
     </div><!-- End Card Content -->
   </div><!-- End Card -->
-  
+
   <!-- Include Modals -->
   @include('admin.partials.deleteModal')
 @endsection<!-- End Content Section -->

@@ -12,7 +12,9 @@ Route::group(['namespace' => 'Admin', 'prefix' => 'dashboard', 'as' => 'admin.',
     // Sections
     Route::resource('sections', 'SectionsController', ['except' => 'show']);
     // Articles
-    Route::resource('articles', 'ArticlesController', ['except' => 'show']);
+    Route::resource('articles', 'ArticlesController');
+    Route::post('articles/{article}/photos', 'ImagesController@store')->name('store_photo');
+    Route::delete('photos/{photo}', 'ImagesController@destroy')->name('destroy_photo');
     // Sliders
     Route::resource('sliders', 'SlidersController', ['except' => 'show']);
     // Contacts

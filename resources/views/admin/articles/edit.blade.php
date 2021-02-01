@@ -10,7 +10,7 @@
     <div class="card-header">
       <a href="{{ route('admin.articles.index') }}" class="button is-success">
         <span class="icon is-small">
-          <i class="fa fa-list"></i>
+          <i class="fa fa-newspaper"></i>
         </span>
         <span>قائمة المقالات</span>
       </a>
