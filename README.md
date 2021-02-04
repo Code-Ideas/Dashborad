@@ -1,5 +1,9 @@
+
+## Laravel DashBoard Demo
+
 <p align="center"><a href="https://dashboard.codeideas.dev" target="_blank">Dashboard Demo</a></p>
 <p align="center"><a href="https://dashboard.codeideas.dev/api/v1" target="_blank">API Demo</a></p>
+
 
 ## Features
 
