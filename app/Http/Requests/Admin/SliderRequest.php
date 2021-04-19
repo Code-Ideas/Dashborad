@@ -24,7 +24,7 @@ class SliderRequest extends FormRequest
     public function rules()
     {
         return [
-            "title"    => "required|string|min:3",
+            'title' => 'required|string|min:3',
             'image' => ($this->method() === 'POST' ? 'required|' : '') . 'image'
         ];
     }
