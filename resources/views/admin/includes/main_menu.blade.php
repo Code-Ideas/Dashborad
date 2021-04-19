@@ -28,6 +28,7 @@
         <a class="link-item" href="{{ route('admin.sliders.index') }}">قائمة الصور</a>
     </collapse-item>
     <a href="{{ route('admin.contacts.index') }}" class="card link-item-no-collapse"><i class="fa fa-envelope"></i><span>رسائل التواصل</span></a>
+    <a href="{{ route('admin.settings.edit') }}" class="card link-item-no-collapse"><i class="fa fa-cogs"></i><span>الاعدادات</span></a>
     <a href="{{ route('admin_logout') }}" onclick="event.preventDefault();
   document.getElementById('logout-form').submit();" class="card link-item-no-collapse"><i
             class="fas fa-sign-out-alt"></i><span>تسجيل الخروج</span></a>

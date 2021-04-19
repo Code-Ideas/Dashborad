@@ -1,45 +1,40 @@
 <div class="card-content">
-    @foreach($languages as $lang)
     <div class="field is-horizontal">
         <div class="field-label is-normal">
-            <label class="label required">{{ 'اسم الموقع'.' : '.$lang->name }} </label>
+            <label class="label required">اسم الموقع</label>
         </div>
         <div class="field-body">
             <div class="field">
                 <div class="control">
-                    <input type="text" name="site_name[{{ $lang->code }}]" class="input"
-                           value="{{ isset($setting) ? $setting->site_name[$lang->code] : null }}">
+                    {!! Form::text('site_name', null, ['class' => 'input', 'required']) !!}
                 </div>
             </div>
         </div>
     </div>
-    @endforeach
-        @foreach($languages as $lang)
-            <div class="field is-horizontal">
-                <div class="field-label is-normal">
-                    <label class="label required">{{ 'وصف الموقع'.' : '.$lang->name }} </label>
-                </div>
-                <div class="field-body">
-                    <div class="field">
-                        <div class="control">
-                            <textarea name="site_description[{{ $lang->code }}]" class="textarea" rows="3">{{ isset($setting) ? $setting->site_description[$lang->code] : null }}</textarea>
-                        </div>
-                    </div>
+    <div class="field is-horizontal">
+        <div class="field-label is-normal">
+            <label class="label required">وصف الموقع</label>
+        </div>
+        <div class="field-body">
+            <div class="field">
+                <div class="control">
+                    {!! Form::textarea('site_description', null, ['class' => 'textarea', 'rows' => 3  , 'required'] )!!}
                 </div>
             </div>
-        @endforeach
+        </div>
+    </div>
     <div class="field is-horizontal">
-       <div class="field-label is-normal">
-         <label class="label"> ايميل الموقع</label>
-       </div>
-       <div class="field-body">
-         <div class="field">
-           <div class="control">
-             {!! Form::text('email', null, ['class' => 'input'] )!!}
-           </div>
-         </div>
-       </div>
-     </div>
+        <div class="field-label is-normal">
+            <label class="label"> ايميل الموقع</label>
+        </div>
+        <div class="field-body">
+            <div class="field">
+                <div class="control">
+                    {!! Form::text('email', null, ['class' => 'input'] )!!}
+                </div>
+            </div>
+        </div>
+    </div>
     <div class="field is-horizontal">
         <div class="field-label is-normal">
             <label class="label">الهاتف</label>
@@ -52,9 +47,9 @@
             </div>
         </div>
     </div>
-<!--    <div class="field is-horizontal">
+    <div class="field is-horizontal">
         <div class="field-label is-normal">
-            <label class="label">What's App</label>
+            <label class="label">Whatsapp</label>
         </div>
         <div class="field-body">
             <div class="field">
@@ -63,7 +58,7 @@
                 </div>
             </div>
         </div>
-    </div>-->
+    </div>
     <div class="field is-horizontal">
         <div class="field-label is-normal">
             <label class="label">FaceBook</label>
@@ -100,9 +95,34 @@
             </div>
         </div>
     </div>
+    <div class="field is-horizontal">
+        <div class="field-label is-normal">
+            <label class="label required">العنوان</label>
+        </div>
+        <div class="field-body">
+            <div class="field">
+                <div class="control">
+                    {!! Form::text('address', null, ['class' => 'input']) !!}
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="field is-horizontal">
+        <div class="field-label is-normal">
+            <label class="label required">الموقع علي الخريطة</label>
+        </div>
+        <div class="field-body">
+            <div class="field">
+                <div class="control">
+                    <google-map :editable="true" @if(isset($setting)) :address="{latitude:{{ $setting->latitude }}, longitude:{{ $setting->longitude }}}" @endif></google-map>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 <footer class="card-footer">
     <div class="buttons has-addons">
-        <a class="button is-info" href="{{ route('admin.settings.edit') }}"> الغاء </a>
+        <a class="button is-info" href="{{ route('admin.dashboard') }}"> الغاء </a>
         <button type="submit" class="button is-success">حفظ</button>
     </div>
 </footer>
