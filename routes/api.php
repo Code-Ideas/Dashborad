@@ -13,7 +13,9 @@ use Illuminate\Support\Facades\Route;
 | is assigned the "api" middleware group. Enjoy building your API!
 |
 */
-
+/* ====== Sign =======*/
+Route::post('login', 'AuthController@login')->name('login');
+Route::post('register', 'AuthController@register')->name('register');
 /*====== Sliders =======*/
 Route::get('sliders', 'SliderController');
 /*====== Sections =======*/
@@ -23,6 +25,7 @@ Route::apiResource('articles', 'ArticlesController', ['only' => ['index', 'show'
 /*====== Contact =======*/
 Route::post('contact', 'ContactController');
 
-Route::middleware('auth:api')->get('/user', function (Request $request) {
-    return $request->user();
+Route::middleware('auth:sanctum')->group(function () {
+    // Logout
+    Route::post('logout', 'AuthController@logout');
 });
