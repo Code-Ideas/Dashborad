@@ -1,0 +1,129 @@
+html[dir="ltr"],
+[dir="ltr"] body {
+    direction: ltr;
+}
+
+html[dir="ltr"] {
+    @media screen and (min-width: 1024px) {
+        .navbar-end {
+            justify-content: flex-end;
+            margin-right: 0;
+            margin-left: auto;
+        }
+    }
+
+    nav.navbar.is-primary.desktop .navbar-start {
+        margin-left: 0;
+        margin-right: auto;
+    }
+
+    nav.navbar.is-primary.desktop {
+        padding-right: 20px;
+        padding-left: 0px;
+    }
+
+    .navbar-dropdown.is-left {
+        right: 0;
+        left: unset;
+    }
+
+    .aside-container .link-item-no-collapse>i,
+    .collapse .link-item i,
+    .collapse header h3 i {
+        margin-right: 10px;
+        margin-left: 0px;
+    }
+
+    .collapse .card-header-icon {
+        transform: rotate(0deg);
+    }
+
+    .flex-card .icon-header i {
+        right: 10px;
+        left: unset;
+    }
+
+    .table tr th,
+    .table tr td {
+        text-align: left;
+    }
+
+    .breadcrumb .icon:first-child {
+        margin-left: unset;
+        margin-right: 0.5em;
+    }
+
+    .page-header .breadcrumb li+li::before {
+        content: "\F105";
+    }
+
+    .breadcrumb li:first-child a {
+        padding-right: 0.75em;
+        padding-left: 0;
+    }
+
+    .vc-chrome {
+        left: 0;
+        right: unset;
+    }
+
+    .button .icon:first-child:not(:last-child) {
+        margin-left: calc(-0.375em - 1px);
+        margin-right: 0.1875em;
+    }
+
+    .field-label {
+        margin-left: unset;
+        margin-right: 1.5rem;
+    }
+
+    .card-footer {
+        justify-content: end;
+    }
+
+    .buttons.has-addons .button:not(:last-child) {
+        margin-right: 7px;
+        margin-left: 0;
+    }
+
+    .select:not(.is-multiple):not(.is-loading)::after {
+        right: 1.125em;
+        left: unset;
+    }
+
+    .select select:not([multiple]) {
+        padding-right: 2.5em;
+        padding-left: calc(0.625em - 1px);
+    }
+
+    .page-container .card.main-card .card-header .search-input .button {
+        margin-left: 10px;
+        margin-right: 0px;
+    }
+
+    .control {
+        text-align: left;
+    }
+
+    .has-text-right {
+        text-align: left !important;
+    }
+
+    .has-text-left {
+        text-align: right !important;
+    }
+
+    .flex-card .content .more {
+        float: right;
+    }
+
+    .login-page .wave {
+        transform: scaleX(-1);
+        left: unset;
+        right: 0;
+    }
+    .ml-6 {
+        margin-left: 0rem !important;
+        margin-right: 3rem !important;
+    }
+}
