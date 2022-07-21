@@ -17,7 +17,7 @@ class CreatePhotosTable extends Migration
             $table->id();
             $table->string('path');
             $table->morphs('photoable');
-            $table->enum('type', ['main', 'gallery'])->default('main');
+            $table->enum('type', ['main', 'large', 'thumb', 'gallery'])->default('main');
             $table->timestamps();
         });
     }

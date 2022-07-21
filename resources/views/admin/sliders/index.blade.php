@@ -29,7 +29,7 @@
                 <tbody>
                     @foreach ($sliders as $slider)
                         <tr>
-                            <td><img src="{{ $slider->image ?: '/front/img/dummy_data/slide2.png' }}"
+                            <td><img src="{{ $slider->thumb ?: '/front/img/dummy_data/slide2.png' }}"
                                     style="width:100px;"></td>
                             <td>{{ $slider->active ? 'مفعل' : 'غير مفعل' }}</td>
                             <td>
