@@ -18,7 +18,7 @@ const tailwindcss = require('tailwindcss');
 //     .sass('resources/assets/front/sass/app.scss', 'public/front/css/app.css')
 //     .options({
 //         processCssUrls: false,
-//         postCss: [ 
+//         postCss: [
 //             tailwindcss('tailwind.config.js'),
 //          ],
 //     }).sourceMaps();
