@@ -5,6 +5,8 @@ namespace App\Http\Controllers\Admin;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\Admin\SliderRequest;
 use App\Models\Slider;
+use Illuminate\Support\Facades\Storage;
+use Intervention\Image\Facades\Image;
 
 class SlidersController extends Controller
 {
@@ -38,10 +40,12 @@ class SlidersController extends Controller
      */
     public function store(SliderRequest $request)
     {
+
         $slider = Slider::create($request->input());
         if ($request->hasFile('image')) {
-            $slider->storeImage($request->file('image')->store('sliders', 'public'));
+            $slider->storeImage($request->file('image'), 'sliders', 'slider');
         }
+
 
         return redirect()->route('admin.sliders.index')->with('success', 'تمت الإضافة بنجاح');
     }
@@ -79,7 +83,7 @@ class SlidersController extends Controller
     {
         $slider->update($request->input());
         if ($request->hasFile('image')) {
-            $slider->updateImage($request->file('image')->store('sliders', 'public'));
+            $slider->updateImage($request->file('image'), 'sliders', 'slider');
         }
 
         return redirect()->route('admin.sliders.index')->with('success', 'تم التعديل بنجاح');
