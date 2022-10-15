@@ -1,9 +1,9 @@
 <collapse class="outer " accordion is-fullwidth>
     <a href="{{ route('landing') }}" target="_blank" class="card link-item-no-collapse "><i
-            class="fa fa-home"></i><span>رئيسية الموقع</span></a>
+            class="fa fa-home"></i><span>{{ __('labels.home') }}</span></a>
     <a href="{{ route('admin.dashboard') }}" class="card link-item-no-collapse "><i
-            class="fas fa-tachometer-alt"></i><span>لوحه التحكم</span></a>
-    <collapse-item title="عناصر وجهة المستخدم" icon="fa fa-image">
+            class="fas fa-tachometer-alt"></i><span>{{ __('labels.dashboard') }}</span></a>
+    <collapse-item title="{{ __('labels.ui_elements') }}" icon="fa fa-image">
         <a class="link-item" href="{{ route('admin.modal_component') }}">Modal</a>
         <a class="link-item" href="{{ route('admin.dropzone_component') }}">DropZone</a>
         <a class="link-item" href="{{ route('admin.uploader_component') }}">File Uploader</a>
@@ -28,10 +28,10 @@
         <a class="link-item" href="{{ route('admin.sliders.index') }}">قائمة الصور</a>
     </collapse-item>
     <a href="{{ route('admin.contacts.index') }}" class="card link-item-no-collapse"><i class="fa fa-envelope"></i><span>رسائل التواصل</span></a>
-    <a href="{{ route('admin.settings.edit') }}" class="card link-item-no-collapse"><i class="fa fa-cogs"></i><span>الاعدادات</span></a>
+    <a href="{{ route('admin.settings.edit') }}" class="card link-item-no-collapse"><i class="fa fa-cogs"></i><span>{{ __('labels.settings') }}</span></a>
     <a href="{{ route('admin_logout') }}" onclick="event.preventDefault();
   document.getElementById('logout-form').submit();" class="card link-item-no-collapse"><i
-            class="fas fa-sign-out-alt"></i><span>تسجيل الخروج</span></a>
+            class="fas fa-sign-out-alt"></i><span>{{ __('labels.logout') }}</span></a>
     <form id="logout-form" action="{{ route('admin_logout') }}" method="POST" style="display: none;">
         @csrf
     </form>

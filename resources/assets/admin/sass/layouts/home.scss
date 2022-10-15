@@ -37,7 +37,7 @@ nav.navbar.is-primary.desktop {
     }
 }
 .notification-menu{
-    
+
     .notification-item {
         width: 340px;
         display: flex;
@@ -55,7 +55,7 @@ nav.navbar.is-primary.desktop {
             font-weight: bold;
             padding-top: 0.6rem;
         }
-        .notification-details{            
+        .notification-details{
             span{
                 display: block;
                 &.name{
@@ -69,7 +69,7 @@ nav.navbar.is-primary.desktop {
                     display: -webkit-box;
                     -webkit-line-clamp: 1;
                     -webkit-box-orient: vertical;
-                    
+
                 }
             }
             .time{
@@ -566,11 +566,16 @@ a:hover {
     }
 }
 
-
+.min-page-content {
+    min-height: calc(100vh - 17rem);
+}
 
 .field-label {
     margin-right: unset;
     margin-left: 1.5rem;
+}
+.field-label .label{
+    text-align: start;
 }
 
 .field-body>.field:not(:last-child) {
@@ -638,7 +643,7 @@ a:hover {
                         border: 1px solid $primary;
                         box-shadow: none;
                         border-radius: 4px!important;
-                    }                    
+                    }
                     .button {
                         border: 0;
                         box-shadow: none;
@@ -649,7 +654,7 @@ a:hover {
                         height: 35px;
                         width: 35px;
                         margin-right: 10px;
-                    }                   
+                    }
                 }
             }
             .card-footer {
@@ -1277,4 +1282,7 @@ ul.list-unstyled {
 
 .has-background-accent {
     background-color: $accent;
+}
+.footer {
+    padding: 1rem 1rem 1rem;
 }

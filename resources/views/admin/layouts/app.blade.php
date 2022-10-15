@@ -9,7 +9,7 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <meta name="locale" content="{{ config('app.locale') }}">
     <!-- Title -->
-    <title>لوحة التحكم | @yield('page.title')</title>
+    <title>{{ __('labels.dashboard') }} | @yield('page.title')</title>
     <!-- SEO Tags -->
     <meta name="description" content="Dashboard, Code, Ideas, settings, laravel, bulma">
     <meta name="author" content="Code Ideas">

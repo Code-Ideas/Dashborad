@@ -20,7 +20,7 @@ class ApplyLocale
         $locale = $segments->first();
 
         if (! in_array($locale, config('app.locales'))) {
-            $locale = 'en';
+            $locale = 'ar';
             app()->setLocale($locale);
             $segments->prepend($locale);
 

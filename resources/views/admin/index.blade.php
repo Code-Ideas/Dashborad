@@ -1,7 +1,7 @@
 <!-- Layout Extend -->
 @extends('admin.layouts.app')
 <!-- SEO Section -->
-@section('page.title', 'الرئيسية')
+@section('page.title', __('labels.home'))
 <!-- Start Content Section -->
 @section('content')
     <!-- Start Top Cards -->
@@ -22,7 +22,7 @@
                             {{ \App\Models\Section::count() }}</div>
                     </div>
                     <div class="mt-2 more">
-                        <a class="accent" href="{{ route('admin.sections.index') }}">المزيد</a>
+                        <a class="accent" href="{{ route('admin.sections.index') }}">{{ __('labels.more') }}</a>
                     </div>
                 </div>
             </div>
@@ -43,7 +43,7 @@
                             {{ \App\Models\Slider::count() }}</div>
                     </div>
                     <div class="mt-2 more">
-                        <a class="accent" href="{{ route('admin.sliders.index') }}">المزيد</a>
+                        <a class="accent" href="{{ route('admin.sliders.index') }}">{{ __('labels.more') }}</a>
                     </div>
                 </div>
             </div>
@@ -64,7 +64,7 @@
                             {{ \App\Models\Article::count() }}</div>
                     </div>
                     <div class="mt-2 more">
-                        <a class="accent" href="{{ route('admin.articles.index') }}">المزيد</a>
+                        <a class="accent" href="{{ route('admin.articles.index') }}">{{ __('labels.more') }}</a>
                     </div>
                 </div>
             </div>
@@ -84,7 +84,7 @@
                         <div class="card-stat accent has-text-right is-size-4 has-text-weight-bold">{{ \App\Models\Contact::count() }}</div>
                     </div>
                     <div class="mt-2 more">
-                        <a class="accent" href="{{ route('admin.contacts.index') }}">المزيد</a>
+                        <a class="accent" href="{{ route('admin.contacts.index') }}">{{ __('labels.more') }}</a>
                     </div>
                 </div>
             </div>
@@ -100,11 +100,11 @@
                     <table class='table is-fullwidth is-hoverable'>
                         <thead>
                             <tr>
-                                <th>اسم العميل </th>
-                                <th>البريد الالكتروني</th>
-                                <th>النوع</th>
-                                <th>العنوان</th>
-                                <th>رقم الهاتف</th>
+                                <th>{{ __('labels.name') }}</th>
+                                <th>{{ __('labels.email') }}</th>
+                                <th>{{ __('labels.gender') }}</th>
+                                <th>{{ __('labels.address') }}</th>
+                                <th>{{ __('labels.phone') }}</th>
                             </tr>
                         </thead>
                         <tbody>

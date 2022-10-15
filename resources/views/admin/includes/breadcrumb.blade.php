@@ -6,7 +6,7 @@
                     <span class="icon is-small">
                         <i class="fa fa-home" aria-hidden="true"></i>
                     </span>
-                    <span>الرئيسية </span>
+                    <span>{{ __('labels.dashboard') }}</span>
                 </a>
             </li>
             @if (Route::current()->getName() != 'admin.dashboard')

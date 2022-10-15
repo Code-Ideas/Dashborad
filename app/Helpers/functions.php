@@ -1,7 +1,5 @@
 <?php
 
-use App\Models\Customer;
-use App\Models\SiteCustomer;
 use Illuminate\Support\Facades\Request;
 
 /**
