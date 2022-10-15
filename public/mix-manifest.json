@@ -1,5 +1,4 @@
 {
-    "/admin/css/app.css": "/admin/css/app.css",
-    "/mix.js.map": "/mix.js.map",
-    "/admin/css/app.css.map": "/admin/css/app.css.map"
+    "/admin/js/app.js": "/admin/js/app.js",
+    "/admin/js/app.js.map": "/admin/js/app.js.map"
 }

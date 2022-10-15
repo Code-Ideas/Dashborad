@@ -24,9 +24,14 @@
       </a>
     </div>
     <div class="navbar-end">
+      <div class="navbar-item">
+        <a class="has-text-white has-text-weight-bold" href="{{ switchLocaleUrl() }}">
+            {{ config('app.locale') === 'ar' ? 'English' : 'العربية' }}
+        </a>
+      </div>
       <div class="navbar-item has-dropdown is-hoverable">
-        <a class="navbar-link " href="#">          
-          <i class="far fa-bell has-text-white fa-lg"></i>          
+        <a class="navbar-link " href="#">
+          <i class="far fa-bell has-text-white fa-lg"></i>
         </a>
         <div class="navbar-dropdown is-left notification-menu">
           <a class="notification-item" href="#" >
@@ -60,7 +65,7 @@
             </p>
           </a>
           <a class="notification-item more" href="#" >
-            See More Notifications 
+            See More Notifications
           </a>
         </div>
       </div>
@@ -95,7 +100,7 @@
       <span class="avatar-name">{{ auth()->guard('admin')->user()->name }}</span>
       <figure class="image is-48x48 avatar">
         <img src="{{ asset('/admin/img/admin.png') }}">
-      </figure>      
+      </figure>
     </div>
   </div>
   <div id="navMenubd" class="navbar-menu">

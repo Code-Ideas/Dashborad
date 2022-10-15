@@ -50,15 +50,15 @@
             <h2 class="mb-3 has-text-black has-text-weight-bold">Example</h2>
             <icon-picker icon="fa fa-star" id="icon"
                 :icon-sets = "[{
-                    name: 'ايقونات الموقع', // Name displayed on tab
-                    css: '/front/css/icons.css', // CSS url containing icons rules
+                    name: 'ايقونات IconMoon', // Name displayed on tab
+                    css: '/icons/iconMoon.css', // CSS url containing icons rules
                     prefix: 'icon-', // CSS rules prefix to identify icons
                     displayPrefix: ''
                 },
                 {
-                    name: 'ايقونات الموقع', // Name displayed on tab
-                    css: '/front/css/icons.css', // CSS url containing icons rules
-                    prefix: 'icon-', // CSS rules prefix to identify icons
+                    name: 'ايقونات Dripicons', // Name displayed on tab
+                    css: '/icons/dripIcons.css', // CSS url containing icons rules
+                    prefix: 'dripicons-', // CSS rules prefix to identify icons
                     displayPrefix: ''
                 }]"
 

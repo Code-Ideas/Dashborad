@@ -44,12 +44,18 @@ class RouteServiceProvider extends ServiceProvider
                 ->namespace($this->namespace.'\API')
                 ->group(base_path('routes/api.php'));
 
+            $locale = request()->segment(1);
+            if (! in_array($locale, config('app.locales'))) {
+                $locale = '';
+            }
             Route::middleware('web')
                 ->namespace($this->namespace)
+                ->prefix($locale)
                 ->group(base_path('routes/dashboard.php'));
 
             Route::middleware('web')
                 ->namespace($this->namespace)
+                ->prefix($locale)
                 ->group(base_path('routes/web.php'));
         });
     }
